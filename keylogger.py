@@ -37,7 +37,3 @@ key_listener_task = threading.Thread(target=key_listener)
 key_listener_task.start()
 screenshot_task = threading.Thread(target=take_screenshot)
 screenshot_task.start()
-
-# linux
-# sudo apt-get install scrot
-# sudo apt-get install python3-tk python3-dev
